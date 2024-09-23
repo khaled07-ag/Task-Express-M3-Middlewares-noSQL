@@ -9,7 +9,7 @@ const {
 const upload = require('../../middleware/multer');
 
 router.get('/', postsGet);
-router.post('/',upload.single("image") , postsCreate);
+router.post('/',upload.single("petImage") , postsCreate);
 
 router.delete('/:postId', postsDelete);
 
